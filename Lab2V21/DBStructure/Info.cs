@@ -49,7 +49,7 @@ namespace Lab2V21.DBStructure
         /// </param>
         public static bool operator<(Info left, Info right)
         {
-            if (left.ArrivalDate == right.ArrivalDate)
+            /*if (left.ArrivalDate == right.ArrivalDate)
             {
                 if (left.AviacompanyName == right.AviacompanyName)
                 {
@@ -66,7 +66,9 @@ namespace Lab2V21.DBStructure
             else if (left.ArrivalDate < right.ArrivalDate)
                 return true;
 
-            return false;
+            return false;*/
+
+            return string.Compare(left.AviacompanyName, right.AviacompanyName) < 0;
         }
 
         /// <summary>
@@ -83,7 +85,7 @@ namespace Lab2V21.DBStructure
         /// </param>
         public static bool operator >(Info left, Info right)
         {
-            if (left.ArrivalDate == right.ArrivalDate)
+            /*if (left.ArrivalDate == right.ArrivalDate)
             {
                 if (left.AviacompanyName == right.AviacompanyName)
                 {
@@ -100,7 +102,8 @@ namespace Lab2V21.DBStructure
             else if (left.ArrivalDate > right.ArrivalDate)
                 return true;
 
-            return false;
+            return false;*/
+            return string.Compare(left.AviacompanyName, right.AviacompanyName) > 0;
         }
 
         /// <summary>
@@ -117,7 +120,7 @@ namespace Lab2V21.DBStructure
         /// </param>
         public static bool operator <=(Info left, Info right)
         {
-            if (left.ArrivalDate == right.ArrivalDate)
+            /*if (left.ArrivalDate == right.ArrivalDate)
             {
                 if (left.AviacompanyName == right.AviacompanyName)
                 {
@@ -134,7 +137,9 @@ namespace Lab2V21.DBStructure
             else if (left.ArrivalDate < right.ArrivalDate)
                 return true;
 
-            return false;
+            return false;*/
+
+            return string.Compare(left.AviacompanyName, right.AviacompanyName) <= 0;
         }
 
         /// <summary>
@@ -151,7 +156,7 @@ namespace Lab2V21.DBStructure
         /// </param>
         public static bool operator >=(Info left, Info right)
         {
-            if (left.ArrivalDate == right.ArrivalDate)
+            /*if (left.ArrivalDate == right.ArrivalDate)
             {
                 if (left.AviacompanyName == right.AviacompanyName)
                 {
@@ -168,7 +173,9 @@ namespace Lab2V21.DBStructure
             else if (left.ArrivalDate > right.ArrivalDate)
                 return true;
 
-            return false;
+            return false;*/
+
+            return string.Compare(left.AviacompanyName, right.AviacompanyName) >= 0;
         }
     }
 }
